@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navi forms</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="https://liquipedia.net/commons/images/thumb/3/3f/Natus_Vincere_2021_lightmode.png/681px-Natus_Vincere_2021_lightmode.png"
+            alt="Зображення">
+        <nav>
+            <ul>
+                <li><a href="#Зареєструватися">Зареєструватися</a></li>
+                <li><a href="#Увійти">Увійти</a></li>
+                <li><a href="#Зворотній_звязок">Зворотній зв'язок</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="registration-form">
+        <h2><a name="Зареєструватися">Зареєструватися</a></h2>
+        <div class="form-fields-horizontal">
+            <div class="column-left">
+                <div class="field">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="field">
+                    <label for="surname">Прізвище:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="field">
+                    <label for="gender">Стать:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Чоловік</option>
+                        <option value="female">Жінка</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="age">Вік:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="field">
+                    <label for="country">Країна проживання:</label>
+                    <select id="country" name="country">
+                        <option value="country1">Ukraine</option>
+                        <option value="country2">Poland</option>
+                        <option value="country3">Austria</option>
+                        <option value="country4">Germany</option>
+                        <option value="country5">Canada</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="field">
+                    <label for="nickname">Нікнейм:</label>
+                    <input type="text" id="nickname" name="nickname" required>
+                </div>
+                <div class="field">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-buttons">
+            <button class="register-button">Зареєструватися</button>
+        </div>
+    </div>
+
+    <div class="login-form">
+        <h2><a name="Увійти">Увійти</a></h2>
+        <div class="column-left">
+            <div class="field">
+                <label for="login">Логін:</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="field">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+        </div>
+        <div class="form-buttons">
+            <button class="login-button">Вхід</button>
+        </div>
+    </div>
+
+    <div class="feedback-form">
+        <h2><a name="Зворотній_звязок">Зворотній зв'язок</a></h2>
+        <div class="column-left">
+            <div class="field">
+                <label for="feedback-name">Ім'я:</label>
+                <input type="text" id="feedback-name" name="feedback-name" required>
+            </div>
+            <div class="field">
+                <label for="feedback-email">Електронна пошта:</label>
+                <input type="email" id="feedback-email" name="feedback-email" required>
+            </div>
+            <div class="field">
+                <label for="feedback-subject">Тема повідомлення:</label>
+                <select id="feedback-subject" name="feedback-subject" required>
+                    <option value="message1">Не вдається увійти або зареєструватися до акаунту</option>
+                    <option value="message2">Технічна проблема</option>
+                    <option value="message3">Партнерська програма</option>
+                </select>
+            </div>
+        </div>
+        <div class="field">
+            <label for="feedback-message">Вікно повідомлення:</label>
+            <textarea id="feedback-message" name="feedback-message" required></textarea>
+        </div>
+        <div class="form-buttons">
+            <button class="send-button">Надіслати</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a name="Контакти"></a>
+            <p>© Hlyviak, 2023</p>
+            <p>Номер телефону: +485421452</p>
+            <p>Twitter: @s1mpleO</p>
+            <p>Instagram: @s1mpleo</p>
+        </div>
+    </footer>
+
+</body>
+</html>
